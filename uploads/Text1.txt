@@ -1,0 +1,15 @@
+//
+await page.goto('gmail');
+await page.locator('#username).fill('Ankita');
+await page.locator('#password).fill('123');
+await page.locator('#login).click();
+
+await expect(page.locator('')).toBeVisible();
+
+
+await page.loactor('').check()
+ await expect(page.loactor('')).toBeChecked();
+
+ await page.locator('').toHaveText('');
+
+ 
