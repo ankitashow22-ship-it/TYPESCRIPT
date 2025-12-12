@@ -99,7 +99,7 @@ test("authenticated popups",async({browser})=>{
 
 //Locator & selectors
 
-   test.only("Using locators",async({page})=>{
+   test("Using locators",async({page})=>{
 
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/")
     await page.getByLabel("Username:").fill("rahulshettyacademy") //using getByLable

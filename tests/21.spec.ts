@@ -88,12 +88,12 @@ test('CheckBox action',async({page})=>{
 
         if(await checkbox.isChecked()){ //true
         
-        //only if checked   
+        / if checked   
         await checkbox.uncheck();
         await expect(checkbox).not.toBeChecked()
         }else{
 
-        //only if not checked
+        / if not checked
         await checkbox.check();
         await expect(checkbox).toBeChecked();
         }
@@ -353,7 +353,7 @@ test('Verify dropdown is sorted ',async({page})=>
 })
 
 
-test.only('Keyboard actions - simple way',async({page})=>
+test('Keyboard actions - simple way',async({page})=>
 {
       await page.goto("https://testautomationpractice.blogspot.com/")
 
