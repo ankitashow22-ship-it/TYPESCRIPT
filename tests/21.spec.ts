@@ -270,30 +270,30 @@ test('Verify dropdown is sorted ',async({page})=>
 
 
     
-    test('Drag and drop',async({page})=>{
+    // test('Drag and drop',async({page})=>{
 
-      await page.goto('https://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-3.html#google_vignette')
-      const rome= page.locator('#box6')
-      const italy= page.locator('#box106')
+    //   await page.goto('https://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-3.html#google_vignette')
+    //   const rome= page.locator('#box6')
+    //   const italy= page.locator('#box106')
 
-      await rome.hover()
-      await page.mouse.down()
-      await italy.hover()
-      await page.mouse.up()
+    //   await rome.hover()
+    //   await page.mouse.down()
+    //   await italy.hover()
+    //   await page.mouse.up()
      
-      await page.waitForTimeout(3000)
-    })
+    //   await page.waitForTimeout(3000)
+    // })
 
 
-       test('Scrolling dropdown',async({page})=>{
+    //    test('Scrolling dropdown',async({page})=>{
 
-      await page.goto('https://demowebshop.tricentis.com/')
+    //   await page.goto('https://demowebshop.tricentis.com/')
    
-      const footerText: string = await page.locator('.footer-disclaimer').innerText();
-      console.log("Footer text captured:",footerText);
+    //   const footerText: string = await page.locator('.footer-disclaimer').innerText();
+    //   console.log("Footer text captured:",footerText);
       
-      await page.waitForTimeout(3000)
-    })
+    //   await page.waitForTimeout(3000)
+    // })
 
    
     /*
@@ -306,51 +306,51 @@ test('Verify dropdown is sorted ',async({page})=>
 
     await page.keyboard('key)
     */
-    test('Keyboard actions',async({page})=>
-{
-      await page.goto("https://testautomationpractice.blogspot.com/")
+//     test('Keyboard actions',async({page})=>
+// {
+//       await page.goto("https://testautomationpractice.blogspot.com/")
 
-      const input1= page.locator("#input1");
+//       const input1= page.locator("#input1");
 
-      //1. focus on input1
-      await input1.focus();  //await input1.click()
+//       //1. focus on input1
+//       await input1.focus();  //await input1.click()
 
-      //2. provide the text input1
-      await page.keyboard.insertText("welcome")
+//       //2. provide the text input1
+//       await page.keyboard.insertText("welcome")
 
-      //3. Ctrl+A - select the text from  input1
-      await page.keyboard.down('Control')
-      await page.keyboard.press('A')
-      await page.keyboard.up('Control')
+//       //3. Ctrl+A - select the text from  input1
+//       await page.keyboard.down('Control')
+//       await page.keyboard.press('A')
+//       await page.keyboard.up('Control')
 
-      //4. Ctrl+C - copy the text from input1
-      await page.keyboard.down('Control')
-      await page.keyboard.press('C')
-      await page.keyboard.up('Control')
+//       //4. Ctrl+C - copy the text from input1
+//       await page.keyboard.down('Control')
+//       await page.keyboard.press('C')
+//       await page.keyboard.up('Control')
 
       //5. Press TAB - 2 times
       // await page.keyboard.down('Tab')
       // await page.keyboard.up('Tab')
     
-      await page.keyboard.press('Tab');
-      await page.keyboard.press('Tab');
+      // await page.keyboard.press('Tab');
+      // await page.keyboard.press('Tab');
 
-      //6. Ctrl+V - paste the text in input2
-      await page.keyboard.down('Control')
-      await page.keyboard.press('V')
-      await page.keyboard.up('Control')
+      // //6. Ctrl+V - paste the text in input2
+      // await page.keyboard.down('Control')
+      // await page.keyboard.press('V')
+      // await page.keyboard.up('Control')
 
-      //7. Press TAB - 2 times
-      await page.keyboard.press('Tab');
-      await page.keyboard.press('Tab');
+      // //7. Press TAB - 2 times
+      // await page.keyboard.press('Tab');
+      // await page.keyboard.press('Tab');
 
-      //8.  Ctrl+V - paste the text in input2
-      await page.keyboard.down('Control')
-      await page.keyboard.press('V')
-      await page.keyboard.up('Control')
+      // //8.  Ctrl+V - paste the text in input2
+      // await page.keyboard.down('Control')
+      // await page.keyboard.press('V')
+      // await page.keyboard.up('Control')
 
-      await page.waitForTimeout(5000)
-})
+//       await page.waitForTimeout(5000)
+// })
 
 
 test('Keyboard actions - simple way',async({page})=>
