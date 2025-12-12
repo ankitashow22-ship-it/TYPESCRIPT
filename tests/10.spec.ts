@@ -125,7 +125,7 @@ test("Download pdf files ",async({page})=>{
       // }
 })
 
-test.only("Single Files Upload Task",async({page})=>{
+test("Single Files Upload Task",async({page})=>{
 
       await page.goto("https://davidwalsh.name/demo/multiple-file-upload.php");
 

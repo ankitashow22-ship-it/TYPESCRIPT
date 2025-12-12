@@ -224,7 +224,7 @@ test('Verify dropdown is sorted ',async({page})=>
 
 
     
-    test.only ('Hidden dropdown ',async({page})=>{
+    test('Hidden dropdown ',async({page})=>{
 
       await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
       await page.locator('input[name="username"]').fill('Admin');

@@ -48,7 +48,7 @@ test('Assertions Demo',async({page})=>
 })
 
 
-test.only('Soft Assertions Demo',async({page})=>
+test('Soft Assertions Demo',async({page})=>
 {
     await page.goto("https://demowebshop.tricentis.com/")
 

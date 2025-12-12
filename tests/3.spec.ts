@@ -48,7 +48,7 @@ test('Autowaiting ',async({page})=>{
 
 
 
-  test.only('Autowait ',async({page})=>{
+  test('Autowait ',async({page})=>{
   await page.goto('https://demowebshop.tricentis.com');
 
   test.setTimeout(60000); // Increase timeout to 60s

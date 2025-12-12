@@ -20,7 +20,7 @@ test("Control Ui",async({page})=>{
 
 });
 
-test.only("Control Ui2",async({page})=>{
+test("Control Ui2",async({page})=>{
 
     await page.goto('https://books-pwakit.appspot.com/');
      

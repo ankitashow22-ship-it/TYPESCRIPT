@@ -96,7 +96,7 @@ test("frames demo",async({page})=>{
 });
 
 
-test.only("inner/child frames demo",async({page})=>{
+test("inner/child frames demo",async({page})=>{
    
    await page.goto("https://ui.vision/demo/webtest/frames/");
   

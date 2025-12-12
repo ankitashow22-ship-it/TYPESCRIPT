@@ -44,7 +44,7 @@ test('Handling dynamic dropdowns' , async({page}) => {
  
 });
  
-test.only('Handling dynamic dropdowns2' , async({page}) => {
+test('Handling dynamic dropdowns2' , async({page}) => {
  
     await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
  
