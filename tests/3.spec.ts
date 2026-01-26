@@ -48,6 +48,7 @@
 
 
 
+//   test.only('Autowait ',async({page})=>{
 //   test('Autowait ',async({page})=>{
 //   await page.goto('https://demowebshop.tricentis.com');
 
@@ -86,3 +87,34 @@
 
 
 // });
+
+
+
+// import { test, expect } from "@playwright/test";
+
+// test("Capture all dates from MakeMyTrip calendar", async ({ page }) => {
+
+//   await page.goto("https://www.makemytrip.com/");
+
+//      let checkinYear: string ="2026";
+//    let checkinMonth: string="February"
+//    let checkinDay: string="9"
+
+//     // Click Departure field to open calendar
+//   await page.locator('label[for="departure"]').click();
+
+//   // Selector for NEXT month arrow
+//   const nextBtn = page.locator('span[aria-label="Next Month"]');
+//    while(true){
+//       const checkinMonthYear= await page.locator("div[aria-live='polite']").nth(0).innerText();
+//       const currentMonth=checkinMonthYear.split(" ")[0]
+//       const currentYear= checkinMonthYear.split(" ")[1]
+
+//       if(currentMonth===checkinMonth&&currentYear===checkinYear){
+//          break;
+//       }else{
+//          await page.locator('button[aria-label="Next Month"]').click()
+//       }
+//    }
+
+//   });
