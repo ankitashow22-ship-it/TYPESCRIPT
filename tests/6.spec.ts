@@ -89,33 +89,33 @@ fixme
 slow
 */
 
-test.skip('Test1',async({page})=>{
-    await page.goto('https://www.google.com/');
-    await expect(page).toHaveTitle('Google');
+// test.skip('Test1',async({page})=>{
+//     await page.goto('https://www.google.com/');
+//     await expect(page).toHaveTitle('Google');
 
-})
+// })
 
-//only
-test('Test2',async({page})=>{
-    await page.goto('https://www.google.com/');
-    await expect(page).toHaveTitle('Google');
+// //only
+// test('Test2',async({page})=>{
+//     await page.goto('https://www.google.com/');
+//     await expect(page).toHaveTitle('Google');
 
-})
+// })
 
-//skip- based on the condition
-test('Test3',async({page,browserName})=>{
-    test.skip(browserName==='firefox','this test skipped if browser is firefox')
-    await page.goto('https://www.google.com/');
-    await expect(page).toHaveTitle('Google');
+// //skip- based on the condition
+// test('Test3',async({page,browserName})=>{
+//     test.skip(browserName==='firefox','this test skipped if browser is firefox')
+//     await page.goto('https://www.google.com/');
+//     await expect(page).toHaveTitle('Google');
 
-})
+// })
 
-//fail
-test.fail('Test4',async({page})=>{
-    await page.goto('https://www.google.com/');
-    await expect(page).toHaveTitle('Google');
+// //fail
+// test.fail('Test4',async({page})=>{
+//     await page.goto('https://www.google.com/');
+//     await expect(page).toHaveTitle('Google');
 
-})
+// })
 
 //fixme
 test.fixme('Test5',async({page})=>{
